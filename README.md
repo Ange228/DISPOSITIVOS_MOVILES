@@ -1,6 +1,6 @@
-# 📱 Dispositivos Móviles  
+# Dispositivos Móviles  
 
-¡Bienvenido a mi repositorio! 🚀  
+¡Bienvenido a mi repositorio!  
 Este espacio contiene los trabajos y prácticas que desarrollo en el curso de **Dispositivos Móviles**.  
 
 ---
