@@ -1,6 +1,7 @@
 # Dispositivos Móviles  
 
 ¡Bienvenido a mi repositorio!  
+Soy Angélica Castillo Tovar estudiante de la carrera de Ingeniería de Software del 6to semestre en la Universidad La Salle.
 Este espacio contiene los trabajos y prácticas que desarrollo en el curso de **Dispositivos Móviles**.  
 
 ---
