@@ -26,13 +26,19 @@ Dentro de este repositorio encontrarás:
 
 ---
 
-## Ejercicios incluidos  
+## Práctica 1
 1. **Evaluación de empleados** → Uso de funciones y condicionales en Kotlin.  
 2. **Piedra, Papel o Tijera** → Aleatoriedad y control de flujo.  
 3. **Calculadora elemental** → Uso de menús, ciclos y funciones.  
-4. **Adivina el número** → Juego con intentos limitados y pistas.  
+4. **Adivina el número** → Juego con intentos limitados y pistas.
 
 ---
+## Práctica 2
+**Programación orientada a objetos en Kotlin**
+1. Clase para Cuenta Bancaria
+2. Clase para Producto
+3. Figuras
+4.  Sistema de Gestión de Biblioteca
 
 ## 🌟 Objetivo del curso  
 Fortalecer mis habilidades en programación móvil y sentar las bases para el desarrollo de aplicaciones Android, aplicando buenas prácticas de código y control de versiones.  
