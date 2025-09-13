@@ -40,6 +40,27 @@ Dentro de este repositorio encontrarás:
 3. Figuras
 4.  Sistema de Gestión de Biblioteca
 
+# Práctica 3  
+**Reproductor de Música en Kotlin**  
+
+## Contenido
+- App que permite reproducir canciones usando `MediaPlayer`.  
+- Funcionalidades:  
+  - Reproducir, pausar y detener canciones.  
+  - Mostrar mensajes y logs sobre el estado del reproductor.  
+  - Interfaz simple con botones para controlar la música.
+
+# Práctica 4  
+**Contador con Ciclo de Vida de Activity**  
+
+## Contenido
+- App que muestra un contador que aumenta al presionar un botón.  
+- Funcionalidades:  
+  - Mantener el contador aunque se rote la pantalla (`onSaveInstanceState`).  
+  - Mostrar mensajes en pantalla (`Toast`) y en consola (`Logcat`) en cada etapa del ciclo de vida de la Activity.  
+  - Interfaz simple con un TextView y un Button.  
+
+
 ## 🌟 Objetivo del curso  
 Fortalecer mis habilidades en programación móvil y sentar las bases para el desarrollo de aplicaciones Android, aplicando buenas prácticas de código y control de versiones.  
 
