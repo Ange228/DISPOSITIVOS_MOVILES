@@ -39,7 +39,7 @@ Dentro de este repositorio encontrarás:
 3. Figuras
 4.  Sistema de Gestión de Biblioteca
 ---
-# Práctica 3  
+## Práctica 3  
 **Reproductor de Música en Kotlin**  
 
 ## Contenido
@@ -49,7 +49,7 @@ Dentro de este repositorio encontrarás:
   - Mostrar mensajes y logs sobre el estado del reproductor.  
   - Interfaz simple con botones para controlar la música.
 ---
-# Práctica 4  
+## Práctica 4  
 **Contador con Ciclo de Vida de Activity**  
 
 ## Contenido
