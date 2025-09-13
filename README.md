@@ -31,7 +31,6 @@ Dentro de este repositorio encontrarás:
 2. **Piedra, Papel o Tijera** → Aleatoriedad y control de flujo.  
 3. **Calculadora elemental** → Uso de menús, ciclos y funciones.  
 4. **Adivina el número** → Juego con intentos limitados y pistas.
-
 ---
 ## Práctica 2
 **Programación orientada a objetos en Kotlin**
@@ -39,7 +38,7 @@ Dentro de este repositorio encontrarás:
 2. Clase para Producto
 3. Figuras
 4.  Sistema de Gestión de Biblioteca
-
+---
 # Práctica 3  
 **Reproductor de Música en Kotlin**  
 
@@ -49,7 +48,7 @@ Dentro de este repositorio encontrarás:
   - Reproducir, pausar y detener canciones.  
   - Mostrar mensajes y logs sobre el estado del reproductor.  
   - Interfaz simple con botones para controlar la música.
-
+---
 # Práctica 4  
 **Contador con Ciclo de Vida de Activity**  
 
