@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">EditorPerfil</string>
+    <string name="msg_name">Escribe tu nombre</string>
+    <string name="msg_edad">Escribe tu edad</string>
+    <string name="msg_btn">"Enviar "</string>
+    <string name="msg_ciudad">Escribe tu ciudad</string>
+    <string name="msg_correo">Ingresa tu correo</string>
+    <string name="txtEdad">Edad:</string>
+    <string name="txtNombre">Nombre:</string>
+    <string name="txtCiudad">Ciudad:</string>
+    <string name="txtCorreo">Correo:</string>
+    <string name="msg_Correo">Ingresa tu correo</string>
 </resources>
