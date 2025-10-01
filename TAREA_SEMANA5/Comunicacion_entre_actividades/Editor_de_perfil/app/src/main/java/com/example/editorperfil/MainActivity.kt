@@ -1,6 +1,7 @@
 package com.example.editorperfil
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
             val ciudad = editTextCiudad.text.toString()
             val correo = editTextCorreo.text.toString()
 
+            val continuar = Intent()
+            continuar.putExtra("NAME",nombre)
+            continuar.putExtra("EDAD",edad)
+            continuar.putExtra("CIUDAD",ciudad)
+            continuar.putExtra("CORREO", correo)
 
         }
     }
