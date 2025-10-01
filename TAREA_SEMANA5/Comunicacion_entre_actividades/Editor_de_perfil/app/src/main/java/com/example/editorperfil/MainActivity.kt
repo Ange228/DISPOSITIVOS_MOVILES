@@ -1,5 +1,6 @@
 package com.example.editorperfil
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -16,13 +17,15 @@ class MainActivity : AppCompatActivity() {
         val editTextEdad= findViewById<EditText>(R.id.edtEdad)
         val editTextCiudad= findViewById<EditText>(R.id.edtCiudad)
         val editTextCorreo= findViewById<EditText>(R.id.edtCorreo)
-        val btnEnviar = findViewById<Button>(R.id.btnEnviar)
+        val btnContinuar = findViewById<Button>(R.id.btnContinuar)
 
-        btnEnviar.setOnClickListener{
+        btnContinuar.setOnClickListener{
             val nombre = editTextName.text.toString()
             val edad = editTextEdad.text.toString().toInt()
             val ciudad = editTextCiudad.text.toString()
             val correo = editTextCorreo.text.toString()
+
+
         }
     }
 }
