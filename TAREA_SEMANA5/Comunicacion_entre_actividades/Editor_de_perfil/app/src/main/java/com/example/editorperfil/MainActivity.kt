@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             continuar.putExtra(objKeys.keyEdad,edad)
             continuar.putExtra(objKeys.keyCiudad,ciudad)
             continuar.putExtra(objKeys.keyCorreo, correo)
-            startActivity(intent)
+            startActivity(continuar)
 
         }
     }

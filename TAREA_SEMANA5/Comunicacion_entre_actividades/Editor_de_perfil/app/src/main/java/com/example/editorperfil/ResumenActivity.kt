@@ -19,6 +19,9 @@ class ResumenActivity : AppCompatActivity() {
         val edad = intent.getIntExtra(objKeys.keyEdad,-1)
         val ciudad = intent.getStringExtra(objKeys.keyCiudad)
         val correo = intent.getStringExtra(objKeys.keyCorreo)
+
+        txtResult.text = "Gracias por llenar tu información, tus datos son: $name, $edad, $ciudad, $correo"
+
         }
     }
 
