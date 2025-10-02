@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         val editTextCorreo= findViewById<EditText>(R.id.edtCorreo)
         val btnContinuar = findViewById<Button>(R.id.btnContinuar)
 
+
+
         btnContinuar.setOnClickListener{
             val nombre = editTextName.text.toString()
             val edad = editTextEdad.text.toString().toInt()

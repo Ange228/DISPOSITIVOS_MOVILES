@@ -1,9 +1,11 @@
 package com.example.editorperfil
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Button
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.editorperfil.Keys
@@ -15,6 +17,8 @@ class ResumenActivity : AppCompatActivity() {
         val objKeys = Keys()
 
         val txtResult = findViewById<TextView>(R.id.txtResult)
+        val btnConfirmar = findViewById<Button>(R.id.btnConfirmar)
+
         val name = intent.getStringExtra(objKeys.keyName)
         val edad = intent.getIntExtra(objKeys.keyEdad,-1)
         val ciudad = intent.getStringExtra(objKeys.keyCiudad)
@@ -22,6 +26,12 @@ class ResumenActivity : AppCompatActivity() {
 
         txtResult.text = "¡Gracias por llenar tu información! \n \n Tus datos son \n Nombre: $name \n Edad: $edad \n Ciudad: $ciudad \n Correo: $correo"
 
+
+        btnConfirmar.setOnClickListener {
+            val continuar = Intent(this, MainActivity::class.java)
+            startActivity(continuar)
+
+            }
         }
     }
 
