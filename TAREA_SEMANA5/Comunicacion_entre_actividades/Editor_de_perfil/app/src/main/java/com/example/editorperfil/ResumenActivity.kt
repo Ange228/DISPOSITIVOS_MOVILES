@@ -20,7 +20,7 @@ class ResumenActivity : AppCompatActivity() {
         val ciudad = intent.getStringExtra(objKeys.keyCiudad)
         val correo = intent.getStringExtra(objKeys.keyCorreo)
 
-        txtResult.text = "Gracias por llenar tu información, tus datos son: $name, $edad, $ciudad, $correo"
+        txtResult.text = "¡Gracias por llenar tu información! \n \n Tus datos son \n Nombre: $name \n Edad: $edad \n Ciudad: $ciudad \n Correo: $correo"
 
         }
     }
