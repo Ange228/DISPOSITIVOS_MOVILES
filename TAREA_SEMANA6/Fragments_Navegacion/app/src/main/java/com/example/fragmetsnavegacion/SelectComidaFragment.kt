@@ -19,7 +19,7 @@ class SelecComidaFragment : Fragment(R.layout.fragment_select_comida) {
         val btnNext = view.findViewById<Button>(R.id.btnSiguienteOpcion)
         val rgComida = view.findViewById<RadioGroup>(R.id.radioGroupComida)//obtenemos el valor del xml
 
-        // volver Resumen y editar la comida
+        // volver Resumen y editar los dulcitos
         setFragmentResultListener("editarPedido") { key, bundle ->
             val comidaEdit = bundle.getString(Keys().dulce) ?: " "
 
