@@ -11,4 +11,5 @@
     <string name="txtCorreo">Correo:</string>
     <string name="msg_Correo">Ingresa tu correo</string>
     <string name="msg_confimar">Confirmar</string>
+    <string name="msg_Editar">Editar información</string>
 </resources>
