@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EditorNota</string>
+    <string name="msg_nota">Escribe tu nota</string>
+    <string name="txtNota">Nota</string>
+    <string name="msg_btn">Compartir</string>
+    <string name="msg_compartir">Compartir por correo</string>
+    <string name="msg_Editar">Editar de nuevo</string>
+</resources>
