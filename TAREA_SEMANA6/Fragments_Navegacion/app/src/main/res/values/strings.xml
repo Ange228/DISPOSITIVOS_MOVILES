@@ -7,4 +7,12 @@
     <string name="Brownie">Brownie</string>
     <string name="Trufa">Trufa</string>
     <string name="txtDesComida">Elige tu dulcito</string>
+    <string name="txtSelExtra">Selecciona tu dulce compañia</string>
+    <string name="CremaPastelera">Crema Pastelera</string>
+    <string name="Fodge">Fodge</string>
+    <string name="Chispitas">Chispitas de colores</string>
+    <string name="msg_companiaDulce">Siguiente</string>
+    <string name="txtDulceFinal">Tu pedido dulce:</string>
+    <string name="msd_editar">Editar orden dulce</string>
+    <string name="msg_confirmar">Confirmar pedido dulce</string>
 </resources>
