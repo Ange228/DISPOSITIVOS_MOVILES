@@ -2,5 +2,9 @@
     <string name="app_name">FragmetsNavegacion</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="msg_nuevaorden">Ver nueva orden</string>
+    <string name="msg_nuevaorden">Ver orden</string>
+    <string name="Cupcacke">Cupcacke</string>
+    <string name="Brownie">Brownie</string>
+    <string name="Trufa">Trufa</string>
+    <string name="txtDesComida">Elige tu dulcito</string>
 </resources>
