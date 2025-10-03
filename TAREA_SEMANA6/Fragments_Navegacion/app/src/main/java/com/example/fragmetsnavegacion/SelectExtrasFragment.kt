@@ -11,7 +11,7 @@ import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 
-class SelecExtrasFragment : Fragment(R.layout.fragment_select_extras) {
+class SelectExtrasFragment : Fragment(R.layout.fragment_select_extras) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

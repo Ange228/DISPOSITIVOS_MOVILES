@@ -11,7 +11,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.fragment.findNavController
 
-class SelecComidaFragment : Fragment(R.layout.fragment_select_comida) {
+class SelectComidaFragment : Fragment(R.layout.fragment_select_comida) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

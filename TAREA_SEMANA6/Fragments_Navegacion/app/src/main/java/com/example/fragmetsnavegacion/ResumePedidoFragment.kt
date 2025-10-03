@@ -12,7 +12,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.findNavController
 
-class ResumenPedidoFragment : Fragment(R.layout.fragment_resume_pedido) {
+class ResumePedidoFragment : Fragment(R.layout.fragment_resume_pedido) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
