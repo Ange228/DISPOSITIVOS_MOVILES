@@ -5,55 +5,48 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.RadioGroup
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResultListener
+import androidx.navigation.fragment.findNavController
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class SelecComidaFragment : Fragment(R.layout.fragment_select_comida) {
 
-/**
- * A simple [Fragment] subclass.
- * Use the [SelectComidaFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class SelectComidaFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+        val btnNext = view.findViewById<Button>(R.id.btnSiguienteOpcion)
+        val rgComida = view.findViewById<RadioGroup>(R.id.radioGroupComida)//obtenemos el valor del xml
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_select_comida, container, false)
-    }
+        // volver Resumen y editar la comida
+        setFragmentResultListener("editarPedido") { key, bundle ->
+            val comidaEdit = bundle.getString(Keys().dulce) ?: " "
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SelectComidaFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SelectComidaFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+            when (comidaEdit) {
+                "Cupcacke" -> rgComida.check(R.id.rbCupcacke)
+                "Brownie" -> rgComida.check(R.id.rbBrownie)
+                "Trufa" -> rgComida.check(R.id.rbTrufa)
             }
+        }
+
+
+        btnNext.setOnClickListener {
+
+            val dulceSelec = when(rgComida.checkedRadioButtonId){
+                R.id.rbCupcacke -> "Cupcacke"
+                R.id.rbBrownie -> "Brownie"
+                R.id.rbTrufa -> "Trufa"
+                else -> "sin dulcito"
+            }
+
+            val datosDulce = bundleOf(Keys().dulce to dulceSelec)
+            findNavController().navigate(R.id.action_selectComidaFragment_to_selectExtrasFragment, datosDulce)
+
+
+
+        }
+
     }
+
 }
