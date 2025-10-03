@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_fragments">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragments"
+    app:startDestination="@id/inicioFragment">
 
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.fragmetsnavegacion.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_selectComidaFragment"
+            app:destination="@id/selectComidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectComidaFragment"
+        android:name="com.example.fragmetsnavegacion.SelectComidaFragment"
+        android:label="fragment_select_comida"
+        tools:layout="@layout/fragment_select_comida" >
+        <action
+            android:id="@+id/action_selectComidaFragment_to_selectExtrasFragment"
+            app:destination="@id/selectExtrasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectExtrasFragment"
+        android:name="com.example.fragmetsnavegacion.SelectExtrasFragment"
+        android:label="fragment_select_extras"
+        tools:layout="@layout/fragment_select_extras" >
+        <action
+            android:id="@+id/action_selectExtrasFragment_to_resumePedidoFragment"
+            app:destination="@id/resumePedidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resumePedidoFragment"
+        android:name="com.example.fragmetsnavegacion.ResumePedidoFragment"
+        android:label="fragment_resume_pedido"
+        tools:layout="@layout/fragment_resume_pedido" >
+        <action
+            android:id="@+id/action_resumePedidoFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
 </navigation>
