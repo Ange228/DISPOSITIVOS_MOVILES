@@ -28,8 +28,12 @@ class ResumenActivity : AppCompatActivity() {
 
 
         btnConfirmar.setOnClickListener {
-            val continuar = Intent(this, MainActivity::class.java)
-            startActivity(continuar)
+            //val continuar = Intent(this, MainActivity::class.java)
+            //startActivity(continuar)
+            val message = Intent()
+            message.putExtra("RESULT", "¡Perfil guardado correctamente!")
+            setResult(RESULT_OK, message)
+            finish()
 
             }
         }

@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.result.registerForActivityResult
 import androidx.appcompat.app.AppCompatActivity
 import com.example.editorperfil.Keys
 
@@ -22,6 +25,14 @@ class MainActivity : AppCompatActivity() {
         val btnContinuar = findViewById<Button>(R.id.btnContinuar)
 
 
+        val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+            result ->
+            if (result.resultCode == RESULT_OK){
+                val data = result.data
+                val msg = data?.getStringExtra("RESULT")
+                Toast.makeText(this,msg, Toast.LENGTH_LONG).show()
+            }
+        }
 
         btnContinuar.setOnClickListener{
             val nombre = editTextName.text.toString()
@@ -34,7 +45,8 @@ class MainActivity : AppCompatActivity() {
             continuar.putExtra(objKeys.keyEdad,edad)
             continuar.putExtra(objKeys.keyCiudad,ciudad)
             continuar.putExtra(objKeys.keyCorreo, correo)
-            startActivity(continuar)
+            launcher.launch(continuar)
+            //startActivity(continuar)
 
         }
     }
