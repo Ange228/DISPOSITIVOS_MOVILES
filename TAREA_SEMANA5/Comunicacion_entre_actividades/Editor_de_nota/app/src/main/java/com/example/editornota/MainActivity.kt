@@ -1,5 +1,6 @@
 package com.example.editornota
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -15,13 +16,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val editTextNota = findViewById<EditText>(R.id.edtNota)
-        val textViewNota = findViewById<TextView>(R.id.txtNota)
         val btnCompartir = findViewById<Button>(R.id.btnCompartir)
 
         btnCompartir.setOnClickListener {
             val nota = editTextNota.text.toString()
-            val Nota = textViewNota.text.toString()
+
+            val compartir = Intent(this, OpcionesActivity::class.java)
+            compartir.putExtra("NOTA", nota)
+            startActivity(compartir)
         }
+
 
         }
     }
