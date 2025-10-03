@@ -18,6 +18,7 @@ class ResumenActivity : AppCompatActivity() {
 
         val txtResult = findViewById<TextView>(R.id.txtResult)
         val btnConfirmar = findViewById<Button>(R.id.btnConfirmar)
+        val btnEditar = findViewById<Button>(R.id.btnEditar)
 
         val name = intent.getStringExtra(objKeys.keyName)
         val edad = intent.getIntExtra(objKeys.keyEdad,-1)
@@ -25,6 +26,11 @@ class ResumenActivity : AppCompatActivity() {
         val correo = intent.getStringExtra(objKeys.keyCorreo)
 
         txtResult.text = "¡Gracias por llenar tu información! \n \n Tus datos son \n Nombre: $name \n Edad: $edad \n Ciudad: $ciudad \n Correo: $correo"
+
+
+        btnEditar.setOnClickListener {
+            finish()
+        }
 
 
         btnConfirmar.setOnClickListener {
